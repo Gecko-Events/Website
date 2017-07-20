@@ -1,6 +1,7 @@
 body {
     font: 1em "Trebuchet MS", Helvetica, sans-serif;
     color: white;
+    background-color: #bbc;
 }
 main {
     margin-top:25px; 
@@ -18,26 +19,25 @@ ul {
     font-weight: bold;
     list-style-type: none;
     margin: 0;
-    padding: 0;
     overflow: hidden;
-    background-color: #CCC;
     align-content: center;
 }
 li {
     float: left;
     padding-right: 2vw;
-    margin-bottom: 10px;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
 }
 li a {
     display: block;
     color: #fff;
     text-align: center;
-    padding: 2vw 10vw;
+    padding: 2vw 8vw;
     text-decoration: none;
-    background-color: #004;
+    background-color: #090;
 }
 li a:hover {
-    background-color: #008;
+    background-color: #0c0;
 }
 .current {
 }
@@ -123,5 +123,6 @@ li a:hover {
   animation-iteration-count: 1;
 }
 #navbar {.
-    margin: 4vw
+    margin: 4vw;
+    background-color: #000;
 }
