@@ -56,4 +56,10 @@ main, footer p {
 }
 #contactform {
     text-align: left;
+    line-height: 130%;
+    font-size:1vw;
+    color:black;
     }
+#contactform label{
+    color:white
+}

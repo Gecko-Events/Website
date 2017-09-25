@@ -5,6 +5,7 @@
         <link rel="icon"
             type="image/png"
             href="img/favicon.png">
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
         <link rel="stylesheet" href="css/main.css">
         
         <link rel='stylesheet'
@@ -28,11 +29,50 @@
                 <img src="img/stock/harold2.jpg">
             </div>
             <hr>
-            <div>
-                <form id="contactform">
-                    <h2>Vul hier uw aanvraag in</h2>
-                    <div class="flex-onerow">
-                        <div style="line-height: 135%;text-align:right">
+            <div class="flex-onerow">
+                <div>
+                    <h2>Vul hier uw aanvraag in</h2>  
+                    <form id="contactform" class="pure-form pure-form-aligned">
+                        <div class="pure-control-group">
+                            <label for="name">Voornaam en naam</label>
+                            <input id="name" type="text" name="name" placeholder="Naam">
+                        </div>
+                        <div class="pure-control-group">
+                            <label for="patrbedr">Particulier of Bedrijf</label>
+                            <select name="partbedr">
+                                <option value="particulier">Particulier</option>
+                                <option value="bedrijf">Bedrijf</option>
+                            </select>
+                        </div>
+                        <div class="pure-control-group">
+                            <label for="tel">Telefoon</label>
+                            <input type="number" name="tel" placeholder="Telefoonnummer"/>
+                        </div>
+                        <div class="pure-control-group">
+                            <label for="event">Event</label>
+                            <select name="event">
+                                <option value="kleiduifschieten">Kleiduifschieten</option>
+                                <option value="highlandgames">Highland Games</option>
+                            </select>
+                        </div>
+                        <div class="pure-control-group">
+                            <label for="period">Periode</label>
+                            <input type="date" name="period"/>
+                        </div>
+                        <div class="pure-control-group">
+                            <label for="people">Aantal personen</label>
+                            <input type="text" name="people" placeholder="Aantal"/>
+                        </div>
+                        <div class="pure-control-group">
+                            <label for="location">Locatie</label>
+                            <input type="text" name="location" placeholder="bvb. Regio Antwerpen"/>
+                        </div>
+                        <div class="pure-control-group">
+                            <label for="information">Bijkomende informatie</label>
+                            <textarea name="information" placeholder="Extra info over "></textarea>
+                        </div>
+                        <!--
+                            <div style="line-height: 130%;text-align:right;font-size:1vw">
                             Naam (voornaam + naam):
                             <br>
                             Particulier of bedrijf:
@@ -49,8 +89,8 @@
                             <br>
                             Bijkomende Informatie:
                         </div>
-                        <div>
-                            <input type="text" name="name"/>
+                        <div style="color:black">
+                            <input type="text" name="name" required/>
                             <br>
                             <select name="partbedr">
                                 <option value="particulier">Particulier</option>
@@ -77,8 +117,8 @@
                         <br><br>
                         </div>
                         -->
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </main>
         <br>
