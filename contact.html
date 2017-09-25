@@ -6,6 +6,7 @@
             type="image/png"
             href="img/favicon.png">
         <link rel="stylesheet" href="css/main.css">
+        
         <link rel='stylesheet'
           href='vendor/font-awesome/css/font-awesome.css'
           type='text/css'>
@@ -14,21 +15,73 @@
         <header id="navbar">
             <ul class="menu-ul">
                 <li class="menu-li-main"><a href="index.html"><img src="img/logo.png"></a></li>
-                <li class="menu-li"><a href="contact.html"><i class="fa fa-phone"></i> Contact</a></li>
+                <li class="menu-li"><a href="contact.html" class="current"><i class="fa fa-phone"></i> Contact</a></li>
                 <li class="menu-li"><a href="fotos.html"><i class="fa fa-camera"></i> Foto's</a></li>
                 <li class="menu-li"><a href="events.html"><i class="fa fa-calendar"></i> Events</a></li>
             </ul>
         </header>
         <main>
             <div class="flex-onerow">
-                <img src="img/stock/harold1.jpg">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elementum est id varius cursus. Morbi nunc urna, molestie at lacus vel, ullamcorper pretium quam. Nam nunc nulla, sagittis ut semper id, pellentesque id nisi. Cras a mi arcu. Maecenas congue ornare justo sit amet hendrerit. Nulla et velit purus. Maecenas nec ante quis mi scelerisque semper. Praesent ex eros, pretium in leo aliquam, eleifend pharetra arcu. Mauris elementum mollis sem vitae dapibus. Donec aliquam auctor quam, at tempor neque molestie id. Pellentesque lorem purus, convallis a turpis a, fermentum fringilla lectus. Aenean aliquam ex id accumsan lacinia. Integer ullamcorper scelerisque ipsum, at suscipit dolor commodo mattis. Nullam mauris mauris, eleifend a neque imperdiet, luctus vehicula odio. Donec semper porttitor ante quis dapibus.</p>
-            </div>
-            <div class="flex-onerow">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elementum est id varius cursus. Morbi nunc urna, molestie at lacus vel, ullamcorper pretium quam. Nam nunc nulla, sagittis ut semper id, pellentesque id nisi. Cras a mi arcu. Maecenas congue ornare justo sit amet hendrerit. Nulla et velit purus. Maecenas nec ante quis mi scelerisque semper. Praesent ex eros, pretium in leo aliquam, eleifend pharetra arcu. Mauris elementum mollis sem vitae dapibus. Donec aliquam auctor quam, at tempor neque molestie id. Pellentesque lorem purus, convallis a turpis a, fermentum fringilla lectus. Aenean aliquam ex id accumsan lacinia. Integer ullamcorper scelerisque ipsum, at suscipit dolor commodo mattis. Nullam mauris mauris, eleifend a neque imperdiet, luctus vehicula odio. Donec semper porttitor ante quis dapibus.</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </p>
                 <img src="img/stock/harold2.jpg">
             </div>
+            <hr>
+            <div>
+                <form id="contactform">
+                    <h2>Vul hier uw aanvraag in</h2>
+                    <div class="flex-onerow">
+                        <div style="line-height: 135%;text-align:right">
+                            Naam (voornaam + naam):
+                            <br>
+                            Particulier of bedrijf:
+                            <br>
+                            Telefoon:
+                            <br>
+                            Event:
+                            <br>
+                            Periode:
+                            <br>
+                            Aantal Personen:
+                            <br>
+                            Locatie:
+                            <br>
+                            Bijkomende Informatie:
+                        </div>
+                        <div>
+                            <input type="text" name="name"/>
+                            <br>
+                            <select name="partbedr">
+                                <option value="particulier">Particulier</option>
+                                <option value="bedrijf">Bedrijf</option>
+                            </select>
+                            <br>
+                            <input type="number" name="tel"/>
+                            <br>
+                            <select name="event">
+                                <option value="kleiduifschieten">Kleiduifschieten</option>
+                                <option value="highlandgames">Highland Games</option>
+                            </select>
+                            <br>
+                            <input type="date" name="period"/>
+                            <br>
+                            <input type="text" name="people"/>
+                            <br>
+                            <input type="text" name="location"/>
+                            <br>
+                            <textarea name="info"></textarea>
+                        </div>
+                        <!-- Zone voor bedrijven
+                        <div class="bussector">
+                        <br><br>
+                        </div>
+                        -->
+                    </div>
+                </form>
+            </div>
         </main>
+        <br>
         <footer style="margin-left: 24.4%; margin-right: 23.2%">
         <details>
           <summary>2017</summary>

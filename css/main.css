@@ -53,3 +53,7 @@ main, footer p {
     display: flex;
     display: -webkit-flex;
     margin-bottom: 1vw;
+}
+#contactform {
+    text-align: left;
+    }
