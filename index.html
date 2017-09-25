@@ -6,12 +6,25 @@
             type="image/png"
             href="img/favicon.png">
         <link rel="stylesheet" href="css/main.css">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="vendor/jquery-3.2.1.min.js"></script>
         
         <link rel='stylesheet'
           href='vendor/font-awesome/css/font-awesome.css'
           type='text/css'>
-        <script src="responsiveslides.min.js"></script>
+        <script src="vendor/ResponsiveSlides.js-1.55/responsiveslides.js"></script>
+        <link rel="stylesheet" href="vendor/ResponsiveSlides.js-1.55/responsiveslides.css">
+        <script>
+            $(function () {
+                $("#mainslide").responsiveSlides({
+                    auto: true,
+                    pager: true,
+                    speed: 500,
+                    maxwidth: 10000,
+                    namespace: "centered-btns"
+                  });
+            });
+        </script>
+        <link rel="stylesheet" href="css/slidesh.css">
     </head>
     <body>
         <header id="navbar">
@@ -22,6 +35,14 @@
                 <li class="menu-li"><a href="events.html"><i class="fa fa-calendar"></i> Events</a></li>
             </ul>
         </header>
+        <div id="slidiv">
+            <ul id="mainslide" class="rslides">
+                <li><img src="img/stock/harold2.jpg"></li>
+                <li><img src="img/stock/harold2.jpg"></li>
+                <li><img src="img/stock/harold2.jpg"></li>
+                <li><img src="img/stock/harold2.jpg"></li>
+            </ul>
+        </div>
         <main>
             <div class="flex-onerow">
                 <img src="img/stock/harold1.jpg">

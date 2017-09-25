@@ -4,10 +4,10 @@ body {
     background-color: #bbc;
 }
 main {
-    margin-top:25px; 
+    margin-top:2vw; 
     padding-right:4vw;
-    margin-left:25px;
-    margin-right:80px;
+    margin-left:4vw;
+    margin-right:4vw;
     background-color:#666;
     text-align: center;
 }
