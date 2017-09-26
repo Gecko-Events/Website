@@ -61,5 +61,25 @@ main, footer p {
     color:black;
     }
 #contactform label{
-    color:white
+    color:white;
+}
+#contactform input, select{
+    width: 12vw;
+}
+#contactform textarea{
+    width: 18vw;
+    height: 6vw;
+    font-size: 0.8vw;
+    resize: none;
+}
+
+.button-green {
+    background: rgb(28, 184, 65);
+}
+#send {
+    float:right;
+    margin-right: 11vw
+}
+#bedrijf {
+    display: none;
 }

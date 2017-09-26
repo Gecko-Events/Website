@@ -11,6 +11,8 @@
         <link rel='stylesheet'
           href='vendor/font-awesome/css/font-awesome.css'
           type='text/css'>
+        
+        <script src="js/form.js"></script>
     </head>
     <body>
         <header id="navbar">
@@ -33,90 +35,54 @@
                 <div>
                     <h2>Vul hier uw aanvraag in</h2>  
                     <form id="contactform" class="pure-form pure-form-aligned">
-                        <div class="pure-control-group">
-                            <label for="name">Voornaam en naam</label>
-                            <input id="name" type="text" name="name" placeholder="Naam">
-                        </div>
-                        <div class="pure-control-group">
-                            <label for="patrbedr">Particulier of Bedrijf</label>
-                            <select name="partbedr">
-                                <option value="particulier">Particulier</option>
-                                <option value="bedrijf">Bedrijf</option>
-                            </select>
-                        </div>
-                        <div class="pure-control-group">
-                            <label for="tel">Telefoon</label>
-                            <input type="number" name="tel" placeholder="Telefoonnummer"/>
-                        </div>
-                        <div class="pure-control-group">
-                            <label for="event">Event</label>
-                            <select name="event">
-                                <option value="kleiduifschieten">Kleiduifschieten</option>
-                                <option value="highlandgames">Highland Games</option>
-                            </select>
-                        </div>
-                        <div class="pure-control-group">
-                            <label for="period">Periode</label>
-                            <input type="date" name="period"/>
-                        </div>
-                        <div class="pure-control-group">
-                            <label for="people">Aantal personen</label>
-                            <input type="text" name="people" placeholder="Aantal"/>
-                        </div>
-                        <div class="pure-control-group">
-                            <label for="location">Locatie</label>
-                            <input type="text" name="location" placeholder="bvb. Regio Antwerpen"/>
-                        </div>
-                        <div class="pure-control-group">
-                            <label for="information">Bijkomende informatie</label>
-                            <textarea name="information" placeholder="Extra info over "></textarea>
-                        </div>
-                        <!--
-                            <div style="line-height: 130%;text-align:right;font-size:1vw">
-                            Naam (voornaam + naam):
-                            <br>
-                            Particulier of bedrijf:
-                            <br>
-                            Telefoon:
-                            <br>
-                            Event:
-                            <br>
-                            Periode:
-                            <br>
-                            Aantal Personen:
-                            <br>
-                            Locatie:
-                            <br>
-                            Bijkomende Informatie:
-                        </div>
-                        <div style="color:black">
-                            <input type="text" name="name" required/>
-                            <br>
-                            <select name="partbedr">
-                                <option value="particulier">Particulier</option>
-                                <option value="bedrijf">Bedrijf</option>
-                            </select>
-                            <br>
-                            <input type="number" name="tel"/>
-                            <br>
-                            <select name="event">
-                                <option value="kleiduifschieten">Kleiduifschieten</option>
-                                <option value="highlandgames">Highland Games</option>
-                            </select>
-                            <br>
-                            <input type="date" name="period"/>
-                            <br>
-                            <input type="text" name="people"/>
-                            <br>
-                            <input type="text" name="location"/>
-                            <br>
-                            <textarea name="info"></textarea>
-                        </div>
-                        <!-- Zone voor bedrijven
-                        <div class="bussector">
-                        <br><br>
-                        </div>
-                        -->
+                        <fieldset>
+                            <div class="pure-control-group">
+                                <label for="name"><i class="fa fa-address-card"></i> Voornaam en naam</label>
+                                <input id="name" type="text" name="name" placeholder="Naam">
+                            </div>
+                            <div class="pure-control-group">
+                                <label for="patrbedr"><i class="fa fa-home"></i> Particulier of bedrijf</label>
+                                <select name="partbedr" onchange="ToggleDiv(this.value)">
+                                    <option value="none">Particulier</option>
+                                    <option value="block">Bedrijf</option>
+                                </select>
+                            </div>
+                            <div id="bedrijf" class="pure-control-group">
+                                <label for="businame"><i class="fa fa-briefcase"></i> Naam van bedrijf</label>                     <input type="text" name="businame" placeholder="Bedrijfsnaam"/>
+                            </div>
+                            <div class="pure-control-group">
+                                <label for="tel"><i class="fa fa-phone"></i> Telefoon</label>
+                                <input type="number" name="tel" placeholder="Telefoonnummer"/>
+                            </div>
+                            <div class="pure-control-group">
+                                <label for="event"><i class="fa fa-calendar"></i> Event</label>
+                                <select name="event">
+                                    <option value="kleiduifschieten">Kleiduifschieten</option>
+                                    <option value="highlandgames">Highland Games</option>
+                                </select>
+                            </div>
+                            <div class="pure-control-group">
+                                <label for="budget"><i class="fa fa-credit-card-alt"></i> Budget</label>
+                                <input type="number" name="budget" placeholder="excl. BTW"/>
+                            </div>
+                            <div class="pure-control-group">
+                                <label for="period"><i class="fa fa-calendar-times-o"></i> Periode</label>
+                                <input type="date" name="period"/>
+                            </div>
+                            <div class="pure-control-group">
+                                <label for="people"><i class="fa fa-users"></i> Aantal personen</label>
+                                <input type="text" name="people" placeholder="Aantal"/>
+                            </div>
+                            <div class="pure-control-group">
+                                <label for="location"><i class="fa fa-map-marker"></i> Locatie</label>
+                                <input type="text" name="location" placeholder="bvb. Regio Antwerpen"/>
+                            </div>
+                            <div class="pure-control-group">
+                                <label for="information"><i class="fa fa-info-circle"></i> Bijkomende informatie</label>
+                                <textarea name="information" placeholder="Extra info..."></textarea>
+                            </div>
+                            <button type="submit" id="send" class="pure-button pure-button-primary button-green">Verstuur <i class="fa fa-send"></i></button>
+                        </fieldset>
                     </form>
                 </div>
             </div>
