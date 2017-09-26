@@ -83,3 +83,52 @@ main, footer p {
 #bedrijf {
     display: none;
 }
+
+.eventfoto{
+    position: relative;
+    width: 32vw;
+    height: 28vw;
+    margin-left: 10%
+}
+.eventfoto .belowtext {
+    opacity: 0;
+    position: absolute;
+    bottom: 5vw;
+    left: 0px;
+    right: 0px;
+    padding: 2px 0px;
+    color: #ffffff;
+    background: #000000;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
+.eventfoto:hover .belowtext {
+    opacity: 0.8;
+}
+.imagetext {
+    opacity: 0;
+    position: absolute;
+    bottom: 7.5vw;
+    left: 0px;
+    right: 0px;
+    padding: 2px 0px;
+    color: #ffffff;
+    background: #000000;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
+.eventfoto:hover .imagetext {
+    opacity: 0.8;
+}
+
+.bellowbutton {
+    margin-top: 3vw
+}
