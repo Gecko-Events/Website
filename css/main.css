@@ -84,19 +84,24 @@ main, footer p {
     display: none;
 }
 
-.eventfoto{
-    position: relative;
-    width: 32vw;
-    height: 28vw;
+.eventdiv{
+    width: 70%;
+    margin-bottom: 10%;
     margin-left: 10%
+}
+.eventfoto {
+    position: relative;
+}
+.eventfoto img{
+    width: 90%
 }
 .eventfoto .belowtext {
     opacity: 0;
     position: absolute;
-    bottom: 5vw;
-    left: 0px;
-    right: 0px;
-    padding: 2px 0px;
+    bottom: -25%;
+    left: 10%;
+    right: 10%;
+    padding: 1%;
     color: #ffffff;
     background: #000000;
     text-decoration: none;
@@ -112,10 +117,10 @@ main, footer p {
 .imagetext {
     opacity: 0;
     position: absolute;
-    bottom: 7.5vw;
-    left: 0px;
-    right: 0px;
-    padding: 2px 0px;
+    bottom: -4%;
+    left: 15%;
+    right: 15%;
+    padding: 1%;
     color: #ffffff;
     background: #000000;
     text-decoration: none;
@@ -130,5 +135,5 @@ main, footer p {
 }
 
 .bellowbutton {
-    margin-top: 3vw
+    margin-top: 4vw
 }
