@@ -1,7 +1,7 @@
 body {
     font: 1.6vw "Trebuchet MS", Helvetica, sans-serif;
     color: white;
-    background-color: #bbc;
+    background-image: url("/img/bgr.jpg");
 }
 main {
     margin-top:2vw; 
