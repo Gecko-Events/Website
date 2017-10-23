@@ -1,128 +1,141 @@
 body {
-    font: 1em "Trebuchet MS", Helvetica, sans-serif;
+    font: 1.6vw "Trebuchet MS", Helvetica, sans-serif;
     color: white;
-    background-color: #bbc;
+    background-image: url("/img/bgr.jpg");
 }
 main {
-    margin-top:25px; 
+    margin-top:2vw; 
     padding-right:4vw;
-    margin-left:25px;
-    margin-right:80px;
+    margin-left:4vw;
+    margin-right:4vw;
     background-color:#666;
     text-align: center;
 }
-p {
+main, footer p {
     padding-left: 3vw;
 }
-ul {
-    font-size: 1.3em;
+.menu-ul {
+    font-size: 2vw;
     font-weight: bold;
     list-style-type: none;
-    margin: 0;
     overflow: hidden;
     align-content: center;
+    margin-right: 10vw;
 }
-li {
-    float: left;
-    padding-right: 2vw;
-    margin-top: 1vw;
-    margin-bottom: 1vw;
+.menu-li {
+    float: right;
+    margin-top: 2.4%;
 }
-li a {
+.menu-li a {
     display: block;
     color: #fff;
     text-align: center;
-    padding: 2vw 8vw;
+    padding: 0.8vw 2.6vw;
+    margin-right: 2vw;
     text-decoration: none;
-    background-color: #090;
+    /*background-color: #090;*/
 }
-li a:hover {
+.menu-li a:hover {
     background-color: #0c0;
 }
+.menu-li-main {
+    float: left;
+    margin-left:2vw;
+    margin-top: 0.3vw;
+}
+#navbar {
+    background: linear-gradient(#252, #060);
+}
 .current {
+    background-color: #0a0;
 }
-/* Wobble Vertical */
-@-webkit-keyframes wobble-vertical {
-  16.65% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-  }
-
-  33.3% {
-    -webkit-transform: translateY(-6px);
-    transform: translateY(-6px);
-  }
-
-  49.95% {
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);
-  }
-
-  66.6% {
-    -webkit-transform: translateY(-2px);
-    transform: translateY(-2px);
-  }
-
-  83.25% {
-    -webkit-transform: translateY(1px);
-    transform: translateY(1px);
-  }
-
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
+.flex-onerow {
+    display: flex;
+    display: -webkit-flex;
+    margin-bottom: 1vw;
+}
+#contactform {
+    text-align: left;
+    line-height: 130%;
+    font-size:1vw;
+    color:black;
+    }
+#contactform label{
+    color:white;
+}
+#contactform input, select{
+    width: 12vw;
+}
+#contactform textarea{
+    width: 18vw;
+    height: 6vw;
+    font-size: 0.8vw;
+    resize: none;
 }
 
-@keyframes wobble-vertical {
-  16.65% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-  }
-
-  33.3% {
-    -webkit-transform: translateY(-6px);
-    transform: translateY(-6px);
-  }
-
-  49.95% {
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);
-  }
-
-  66.6% {
-    -webkit-transform: translateY(-2px);
-    transform: translateY(-2px);
-  }
-
-  83.25% {
-    -webkit-transform: translateY(1px);
-    transform: translateY(1px);
-  }
-
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
+.button-green {
+    background: rgb(28, 184, 65);
+}
+#send {
+    float:right;
+    margin-right: 11vw
+}
+#bedrijf {
+    display: none;
 }
 
-.wobble-vertical {
-  display: inline-block;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+.eventdiv{
+    width: 70%;
+    margin-bottom: 5em;
+    margin-left: 15%
 }
-.wobble-vertical:hover, .wobble-vertical:focus, .wobble-vertical:active {
-  -webkit-animation-name: wobble-vertical;
-  animation-name: wobble-vertical;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
+.eventfoto {
+    position: relative;
 }
-#navbar {.
-    margin: 4vw;
-    background-color: #000;
+.eventfoto img{
+    width: 100%
+}
+.eventfoto .belowtext {
+    opacity: 0;
+    position: absolute;
+    bottom: -8em;
+    padding: 2%;
+    color: #ffffff;
+    background: #000000;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
+.eventfoto:hover .belowtext {
+    opacity: 0.8;
+}
+.imagetext {
+    opacity: 0;
+    position: absolute;
+    bottom: -0.5em;
+    left: 0;
+    right: 0;
+    padding: 1.5%;
+    color: #ffffff;
+    background: #000000;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
+.eventfoto:hover .imagetext {
+    opacity: 0.8;
+}
+.bellowbutton {
+    margin-top: 10em;
+    padding: 2.5%
+}
+banner img{
+    width: 100%;
+    height: 15vw;
 }

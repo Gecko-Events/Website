@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gecko Events - Contact</title>
+        <link rel="icon"
+            type="image/png"
+            href="img/favicon.png">
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css">
+        
+        <link rel='stylesheet'
+          href='vendor/font-awesome/css/font-awesome.css'
+          type='text/css'>
+        
+        <script src="js/form.js"></script>
+    </head>
+    <body>
+        <header id="navbar">
+            <ul class="menu-ul">
+                <li class="menu-li-main"><a href="index.html"><img src="img/logo.png"></a></li>
+                <li class="menu-li"><a href="contact.html" class="current"><i class="fa fa-phone"></i> Contact</a></li>
+                <li class="menu-li"><a href="fotos.html"><i class="fa fa-camera"></i> Foto's</a></li>
+                <li class="menu-li"><a href="events.html"><i class="fa fa-calendar"></i> Events</a></li>
+            </ul>
+        </header>
+        <main>
+            <div class="flex-onerow">
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </p>
+                <img src="img/stock/harold2.jpg">
+            </div>
+            <hr>
+            <div class="flex-onerow">
+                <div>
+                    <h2>Vul hier uw aanvraag in</h2>  
+                    <form id="contactform" class="pure-form pure-form-aligned">
+                        <fieldset>
+                            <div class="pure-control-group">
+                                <label for="name"><i class="fa fa-address-card"></i></label>
+                                <input id="name" type="text" name="name" placeholder="Voornaam en naam">
+                            </div>
+                            <div class="pure-control-group">
+                                <label for="patrbedr"><i class="fa fa-home"></i></label>
+                                <select name="partbedr" onchange="ToggleDiv(this.value)">
+                                    <option value="none">Particulier of bedrijf</option>
+                                    <option value="none">Particulier</option>
+                                    <option value="block">Bedrijf</option>
+                                </select>
+                            </div>
+                            <div id="bedrijf" class="pure-control-group">
+                                <label for="businame"><i class="fa fa-briefcase"></i></label>     <input type="text" name="businame" placeholder="Bedrijfsnaam"/>
+                            </div>
+                            <div class="pure-control-group">
+                                <label for="tel"><i class="fa fa-phone"></i></label>
+                                <input type="number" name="tel" placeholder="Telefoonnummer"/>
+                            </div>
+                            <div class="pure-control-group">
+                                <label for="mail"><i class="fa fa-envelope"></i></label>
+                                <input type="email" name="mail" placeholder="E-mail"/>
+                            </div>
+                            <div class="pure-control-group">
+                                <label for="event"><i class="fa fa-calendar"></i></label>
+                                <select name="event">
+                                    <option value=false>Event</option>
+                                    <option value="kleiduifschieten">Kleiduifschieten</option>
+                                    <option value="highlandgames">Highland Games</option>
+                                </select>
+                            </div>
+                            <div class="pure-control-group">
+                                <label for="budget"><i class="fa fa-credit-card-alt"></i></label>
+                                <input type="number" name="budget" placeholder="Budget (excl. BTW)"/>
+                            </div>
+                            <div class="pure-control-group">
+                                <label for="period"><i class="fa fa-calendar-times-o"></i></label>
+                                <input type="text" name="period" placeholder="Datum of periode"/>
+                            </div>
+                            <div class="pure-control-group">
+                                <label for="people"><i class="fa fa-users"></i></label>
+                                <input type="text" name="people" placeholder="Aantal personen"/>
+                            </div>
+                            <div class="pure-control-group">
+                                <label for="location"><i class="fa fa-map-marker"></i></label>
+                                <input type="text" name="location" placeholder="Locatie"/>
+                            </div>
+                            <div class="pure-control-group">
+                                <label for="information"><i class="fa fa-info-circle"></i></label>
+                                <textarea name="information" placeholder="Bijkomende informatie..."></textarea>
+                            </div>
+                            <button type="submit" id="send" class="pure-button pure-button-primary button-green">Verstuur <i class="fa fa-send"></i></button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <br>
+        <footer style="margin-left: 24.4%; margin-right: 23.2%">
+        <details>
+          <summary>2017</summary>
+            <p> Thom Ernst</p>
+            <p> Gecko BVBA</p>
+        </details>
+    </footer>
+    </body>
+</html>

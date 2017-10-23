@@ -1,28 +1,58 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Geko</title>
+        <title>Gecko Events - Home</title>
         <link rel="icon"
             type="image/png"
             href="img/favicon.png">
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
         <link rel="stylesheet" href="css/main.css">
+        <script src="vendor/jquery-3.2.1.min.js"></script>
+        
         <link rel='stylesheet'
           href='vendor/font-awesome/css/font-awesome.css'
           type='text/css'>
+        <script src="vendor/ResponsiveSlides.js-1.55/responsiveslides.js"></script>
+        <link rel="stylesheet" href="vendor/ResponsiveSlides.js-1.55/responsiveslides.css">
+        <script>
+            $(function () {
+                $("#mainslide").responsiveSlides({
+                    auto: true,
+                    pager: true,
+                    speed: 500,
+                    maxwidth: 10000,
+                    namespace: "centered-btns"
+                  });
+            });
+        </script>
+        <link rel="stylesheet" href="css/slidesh.css">
     </head>
     <body>
-        <div id="navbar">
-            <ul>
-                <li><a style="background-color:#0f0" class="wobble-vertical" href="index.html">Home</a></li>
-                <li><a class="wobble-vertical" href="about.html">About</a></li>
-                <li><a class="wobble-vertical" href="#">Lorem</a></li>
-                <li><a class="wobble-vertical" href="#">Ipsum</a></li>
+        <header id="navbar">
+            <ul class="menu-ul">
+                <li class="menu-li-main"><a href="index.html"><img src="img/logo.png"></a></li>
+                <li class="menu-li"><a href="contact.html"><i class="fa fa-phone"></i> Contact</a></li>
+                <li class="menu-li"><a href="fotos.html"><i class="fa fa-camera"></i> Foto's</a></li>
+                <li class="menu-li"><a href="events.html"><i class="fa fa-calendar"></i> Events</a></li>
+            </ul>
+        </header>
+        <div id="slidiv">
+            <ul id="mainslide" class="rslides">
+                <li><img src="img/stock/harold2.jpg"></li>
+                <li><img src="img/stock/harold2.jpg"></li>
+                <li><img src="img/stock/harold2.jpg"></li>
+                <li><img src="img/stock/harold2.jpg"></li>
             </ul>
         </div>
         <main>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elementum est id varius cursus. Morbi nunc urna, molestie at lacus vel, ullamcorper pretium quam. Nam nunc nulla, sagittis ut semper id, pellentesque id nisi. Cras a mi arcu. Maecenas congue ornare justo sit amet hendrerit. Nulla et velit purus. Maecenas nec ante quis mi scelerisque semper. Praesent ex eros, pretium in leo aliquam, eleifend pharetra arcu. Mauris elementum mollis sem vitae dapibus. Donec aliquam auctor quam, at tempor neque molestie id. Pellentesque lorem purus, convallis a turpis a, fermentum fringilla lectus. Aenean aliquam ex id accumsan lacinia. Integer ullamcorper scelerisque ipsum, at suscipit dolor commodo mattis. Nullam mauris mauris, eleifend a neque imperdiet, luctus vehicula odio. Donec semper porttitor ante quis dapibus.<br>
-            Integer tempor dui purus, vitae faucibus turpis scelerisque sit amet. Integer vitae lacinia elit. Proin vel pulvinar nisl, at scelerisque ex. Vestibulum ornare condimentum est, eu tempor mi. Sed dolor erat, tristique a placerat nec, elementum nec ex. Vestibulum facilisis sed mauris sit amet pellentesque. In interdum quam at est tincidunt rhoncus. Integer sit amet tortor ac tellus hendrerit vulputate. Vivamus elementum gravida felis at fringilla. Integer et elementum lorem.
-            </p>
+            <div class="flex-onerow">
+                <img src="img/stock/harold1.jpg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elementum est id varius cursus. Morbi nunc urna, molestie at lacus vel, ullamcorper pretium quam. Nam nunc nulla, sagittis ut semper id, pellentesque id nisi. Cras a mi arcu. Maecenas congue ornare justo sit amet hendrerit. Nulla et velit purus. Maecenas nec ante quis mi scelerisque semper. Praesent ex eros, pretium in leo aliquam, eleifend pharetra arcu. Mauris elementum mollis sem vitae dapibus. Donec aliquam auctor quam, at tempor neque molestie id. Pellentesque lorem purus, convallis a turpis a, fermentum fringilla lectus. Aenean aliquam ex id accumsan lacinia. Integer ullamcorper scelerisque ipsum, at suscipit dolor commodo mattis. Nullam mauris mauris, eleifend a neque imperdiet, luctus vehicula odio. Donec semper porttitor ante quis dapibus.</p>
+            </div>
+            <div class="flex-onerow">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elementum est id varius cursus. Morbi nunc urna, molestie at lacus vel, ullamcorper pretium quam. Nam nunc nulla, sagittis ut semper id, pellentesque id nisi. Cras a mi arcu. Maecenas congue ornare justo sit amet hendrerit. Nulla et velit purus. Maecenas nec ante quis mi scelerisque semper. Praesent ex eros, pretium in leo aliquam, eleifend pharetra arcu. Mauris elementum mollis sem vitae dapibus. Donec aliquam auctor quam, at tempor neque molestie id. Pellentesque lorem purus, convallis a turpis a, fermentum fringilla lectus. Aenean aliquam ex id accumsan lacinia. Integer ullamcorper scelerisque ipsum, at suscipit dolor commodo mattis. Nullam mauris mauris, eleifend a neque imperdiet, luctus vehicula odio. Donec semper porttitor ante quis dapibus.</p>
+                <img src="img/stock/harold2.jpg">
+            </div>
         </main>
         <footer style="margin-left: 24.4%; margin-right: 23.2%">
         <details>
@@ -30,9 +60,6 @@
             <p> Thom Ernst</p>
             <p> Gecko BVBA</p>
         </details>
-        <div>
-            <a href="mailto:thom@ernst.work"><i class="fa fa-envelope fa-2x"></i></a>
-        </div>
     </footer>
     </body>
 </html>
